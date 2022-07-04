@@ -1,0 +1,62 @@
+.App {
+  text-align: center;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 200ms;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.Side-menu{
+  width: 100px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.open{
+ width: 80%;
+}
+
+.close{
+  width: 95%;
+}
+
+.Side-menu a{
+  padding: 10px 10px;
+}
+
+.Container{
+  display: flex;
+}
+
+
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
