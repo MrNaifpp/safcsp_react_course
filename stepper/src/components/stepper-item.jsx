@@ -1,4 +1,15 @@
+import { useEffect } from "react";
+import { useState } from "react";
+
 export default function Stepper(props) {
+  const [isInit,SetIsinit] = useState(true);
+
+  useEffect(()=>{
+    console.log("");
+    return (()=>{
+      console.log("out");
+    })
+  },[])
   return (
     <>
       <div style={{ display: "flex" }}>

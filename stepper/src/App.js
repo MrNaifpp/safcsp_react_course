@@ -4,14 +4,16 @@ import Stepper from "./components/stepper-item";
 
 function App() {
   const [currentStep, setCurrentStep] = useState(1);
+  const [show,setShow]= useState(true);
   return (
     <>
       <div
         className="App"
         style={{ justifyContent: "center", display: "flex" }}
       >
-        <Stepper stepCount={3} curruntIndex={currentStep} />
+        {show && <Stepper stepCount={3} curruntIndex={currentStep} />} 
       </div>
+     
       <div
         style={{
           display: "flex",
@@ -20,6 +22,7 @@ function App() {
         }}
       >
         <button onClick={() => setCurrentStep(currentStep + 1)}>Next</button>
+        <button onClick={()=>setShow(!show)}>show</button>
       </div>
     </>
   );
